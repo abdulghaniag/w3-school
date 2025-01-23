@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
 *{
@@ -11,35 +12,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-        li{
-            display: inline-block;
-            margin-left: 50px;
-            font-size: 2cap;
-            width: 90px;
-            height: 40px;
-            padding-top: 10px;
-            padding-left: 10px;
-        }
-        ul{
-            margin-left: 50px;
-        /* border: 2px  solid salmon; */
-        width: 80%;
-        height: 50px;
-            display: inline-block;
-
-        } */
-        
-
-
+*/
 .nav{
     width: 100%;
     height: 100px;
-    /* background-color: aqua; */
-    /* border: 3px solid goldenrod; */
     display: inline-block;
 }
 .nav ul{
-    /* background-color: aqua; */
+    /* background-color: rgb(4, 0, 255); */
     margin-left: 150px;
         width: 90%;
         height: 60px;
@@ -47,19 +27,18 @@
     
 }
 .nav li{
-    display: inline-block;
+           display: inline-block;
             margin-left: 50px;
             font-size: 2.5cap;
-            width: 120px;
-            height: 40px;
+            width: 140px;
+            height: 50px;
             padding-top: 10px;
             padding-left: 10px;  
+            /* background-color: aqua; */
 }
-.logo{
-    /* background-color: bisque; */
-    width: 60px;
-    height: 60px;
-    
+.nav i{
+    font-size: large;
+    padding-left: 5px;
 }
 .logo img{
     margin-left: 50px;
@@ -92,7 +71,7 @@
             width: 100px;
             height: 45px;
             border-radius: 20px;
-            margin-left: 100px;
+            margin-left: 50px;
         }
 .in{
          border-radius: 20px;
@@ -115,7 +94,7 @@
       li:hover{
         background-color: rgb(38, 142, 38);
         color: white;
-        width: 120px;
+        width: 140px;
     cursor: pointer;
     
      }  
@@ -133,7 +112,12 @@
 }
 .nav2 h2{
     font-weight: lighter;
-    margin-left: 25px;
+    margin-left: 10px;
+}
+.nav2 i{
+    font-size: large;
+    padding-left: 5px;
+    color: rgb(162, 159, 159);
 }
 .nav2 h2:hover{
 background-color: rgb(19, 19, 19);
@@ -151,22 +135,40 @@ background-color: rgb(19, 19, 19);
     color: black;
 }
 .left{
+    margin-top: 110px;
     display: inline-block;
     width: 15%;
     height: 100vh;
-    background-color: blanchedalmond;
+    background-color: rgb(230, 228, 224);
+    overflow-y: scroll;
 
+}
+.left p{
+    padding-left: 10px;
+    width: 210px;
+    height: 24px;
+    /* background-color: aqua; */
+    
+}
+.left p:hover{
+    background-color: rgb(183, 176, 176);
+}
+.left p:hover{
+    cursor: pointer;
+    
 }
 
 .right{
-
+    margin-top: 110px;
+    overflow-y: scroll;
     float: right;
     width: 85%;
     height: 100vh;
     display: inline-block;
-    background-color: aqua;
+    background-color: rgb(242, 246, 246);
 }
 .right h2{
+    padding-top: 20px;
     font-size: 4cap;
     margin-left: 50px;
 }
@@ -178,6 +180,15 @@ background-color: rgb(19, 19, 19);
     border-radius: 25px;
     margin-left: 50px;
     margin-top: 30px;
+    color: white;
+}
+.read:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.right h2:hover{
+    cursor: pointer;
+    color: rgb(177, 181, 185);
 }
 .right img{
     margin-top: 20px;
@@ -185,29 +196,46 @@ background-color: rgb(19, 19, 19);
 height: 300px;
 margin-left: 100px;
 }
-     
+.right img:hover{
+    cursor: pointer;
+}
+.right p{
+    margin-top: 10px;
+    padding: 15px;
+
+}
+.subnav{
+    /* background-color: aquamarine; */
+    position: fixed;
+top: 0;
+background-color: white;
+width: 100%;
+
+}  
     </style>
 </head>
 <body>
+    <div class="subnav">
     <div class="nav">
         <div class="logo">
-        <img src="img/school logo.png" alt="" width="100px" height="100px">
+        <img src="img/school logo.png" alt=""  class="logo">
     </div>
     <div class="navicon">
         <ul>
-        <li>Tutorial</li>
-        <li>Excersice</li>
-        <li>Certificate</li>
-        <li>Service</li>
+        <li>Tutorial<i class="fa-solid fa-caret-down"></i></li>
+        <li>Excersice<i class="fa-solid fa-caret-down"></i></li>
+        <li>Certificate<i class="fa-solid fa-caret-down"></i></li>
+        <li>Service<i class="fa-solid fa-caret-down"></i></li>
         <input type="text" name="" id="" placeholder="Search...">
         <button class="up">Signup</button>
         <button class="in">Log in</button>
       </ul> 
     </div>
     </div>
+
     <div class="allnav">
     <div class="nav2">
-        <h2>HTML</h2>
+        <h2>HTML<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
     <p>html</p>
     <p>html</p>
@@ -221,7 +249,7 @@ margin-left: 100px;
 
 
 <div class="nav2">
-    <h2>CSS</h2>
+    <h2>CSS<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Css</p>
 <p>Css</p>
@@ -230,7 +258,7 @@ margin-left: 100px;
 <p>Css</p>
 </div>
 </div><div class="nav2">
-    <h2>JAVA</h2>
+    <h2>JAVA<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Java</p>
 <p>Java</p>
@@ -239,7 +267,7 @@ margin-left: 100px;
 <p>Java</p>
 </div>
 </div><div class="nav2">
-    <h2>PHYTHON</h2>
+    <h2>PHYTHON<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Phython</p>
 <p>Phython</p>
@@ -248,7 +276,7 @@ margin-left: 100px;
 <p>Phython</p>
 </div>
 </div><div class="nav2">
-    <h2>PHP</h2>
+    <h2>PHP<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Php</p>
 <p>Php</p>
@@ -258,7 +286,7 @@ margin-left: 100px;
 </div>
 </div>
 <div class="nav2">
-    <h2>W.3</h2>
+    <h2>W.3<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>W.3</p>
 <p>W.3</p>
@@ -267,7 +295,7 @@ margin-left: 100px;
 <p>W.3</p>
 </div>
 </div><div class="nav2">
-    <h2>REACT</h2>
+    <h2>REACT<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>React</p>
 <p>React</p>
@@ -276,7 +304,7 @@ margin-left: 100px;
 <p>React</p>
 </div>
 </div><div class="nav2">
-    <h2>C++</h2>
+    <h2>C++<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>C++</p>
 <p>C++</p>
@@ -285,7 +313,7 @@ margin-left: 100px;
 <p>C++</p>
 </div>
 </div><div class="nav2">
-    <h2>EXCEL</h2>
+    <h2>EXCEL<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Excel</p>
 <p>Excel</p>
@@ -294,7 +322,7 @@ margin-left: 100px;
 <p>Excel</p>
 </div>
 </div><div class="nav2">
-    <h2>XML</h2>
+    <h2>XML<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Xml</p>
 <p>Xml</p>
@@ -303,13 +331,14 @@ margin-left: 100px;
 <p>Xml</p>
 </div>
 </div><div class="nav2">
-    <h2>BOOTSTRAP</h2>
+    <h2>BOOTSTRAP<i class="fa-solid fa-caret-down"></i></h2>
 <div class="drop">
 <p>Bootstrap</p>
 <p>Bootstrap</p>
 <p>Bootstrap</p>
 <p>Bootstrap</p>
 <p>Bootstrap</p>
+</div>
 </div>
 </div>
 </div>
@@ -377,7 +406,7 @@ margin-left: 100px;
     <h2>W3.CSS Tutorial</h2>
     <button class="read">Read Me!</button>
     <br>
-    <img src="img/images" alt="">
+    <img src="img/web.jpg" alt="">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quisquam quia dolorum? Maxime voluptatum veniam, laudantium nisi incidunt non perspiciatis totam, libero praesentium quia repellendus, aut impedit eligendi beatae id?
     Magnam quod, molestiae laboriosam quia minus aliquam totam nemo enim ex, unde officiis? Deserunt perferendis odit a at suscipit! Mollitia ex non quasi maxime amet, reprehenderit enim facere vero officiis.
     Labore tempora esse impedit amet nostrum, a nihil nobis sit et vel quo iusto inventore officia veritatis! Obcaecati fugiat rerum, similique aut aliquid fugit molestias minima veniam quos odio autem?
@@ -394,12 +423,7 @@ margin-left: 100px;
     A modi eos laborum numquam. Nulla officiis sunt culpa voluptatum harum odio expedita earum explicabo temporibus rem omnis repellat iusto, sapiente, laudantium dolorum dignissimos exercitationem velit? Ipsum earum laborum deserunt!
     Corporis quas numquam vel, iste hic corrupti atque cupiditate placeat obcaecati nostrum aperiam voluptas dolorum rem fugit? Nam eum ratione, consectetur provident accusantium voluptatum tempora veniam! Libero saepe iure corrupti.
     Iste aliquid quis quibusdam quae nobis nesciunt quisquam dignissimos minus, sunt, totam deleniti impedit vitae velit quia esse ab libero minima commodi quasi omnis recusandae. Harum a iusto corrupti amet!
-    Nemo hic assumenda harum porro, in velit tempora eveniet! Voluptate libero sit maiores nulla tempora! Soluta animi, veritatis quasi recusandae quae quo tenetur odit doloribus libero omnis vitae reiciendis illum.
-    Consectetur dolorem saepe cupiditate ducimus odio minima eum consequuntur magni debitis quam recusandae in ut, aperiam incidunt atque culpa sint voluptas perspiciatis tempora provident sunt nostrum! Fuga recusandae a molestias.
-    Voluptates perspiciatis delectus necessitatibus nulla temporibus atque adipisci itaque nesciunt, rem sint. Officia maxime aperiam tempora sequi saepe sint, est autem porro ut! Quia, consequatur eligendi ut molestias itaque praesentium!
-    Quam cupiditate est dicta ratione? Eius harum similique, numquam cum excepturi ab exercitationem assumenda dicta recusandae minima! Officiis, dolorum nihil recusandae voluptate animi aliquam quod, modi repudiandae, nam et similique?
-    Similique incidunt inventore molestiae illo quisquam libero rerum a molestias rem, qui repellendus impedit sapiente consectetur eveniet? Accusantium error est dolores minima ex omnis cumque nihil quibusdam illo sapiente. Similique.
-    Mollitia accusantium non voluptatum repellendus commodi asperiores magni amet inventore quae labore tempore corrupti, reprehenderit illum alias laboriosam soluta, ex quis possimus nobis. Quidem possimus nihil amet saepe soluta dicta.
+    Nemo hic assumentium non voluptatum repellendus commodi asperiores magni amet inventore quae labore tempore corrupti, reprehenderit illum alias laboriosam soluta, ex quis possimus nobis. Quidem possimus nihil amet saepe soluta dicta.
     Expedita sapiente distinctio delectus odit deleniti optio in exercitationem, assumenda velit unde. Voluptatem eligendi minima corrupti delectus eius excepturi incidunt quia odit recusandae, blanditiis earum unde exercitationem necessitatibus! Quasi, fugiat.
     Expedita, recusandae odio dolorum iste, officiis ad deserunt impedit repellendus fuga numquam vero explicabo aliquid! Officia, sit illum laborum debitis eius aperiam voluptas quisquam modi suscipit fuga, cum nemo ipsa.
     Laborum non aliquam explicabo, veritatis pariatur, soluta similique corrupti saepe magnam dolore porro asperiores sunt quas cumque laboriosam facere, quae qui. Debitis modi ut perspiciatis autem est sed exercitationem. Cumque.
